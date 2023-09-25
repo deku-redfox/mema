@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className={`darkOverlay ${!showSide && 'opacity-0 pointer-events-none'}`}></div>
+      <div className={`darkOverlay ${!showSide && 'opacity-0 pointer-events-none'}`} onClick={()=> {setSideState(false)}}></div>
 
       <SideNav disableCallBack={(value)=> {setSideState(value)}} showing={showSide}/>
 
@@ -60,7 +60,7 @@ const Header = () => {
 
             <FlatButton text='Download' black= {isActive ? false : true} className='hidden md:block max-xl:text-[15px]' link='/download'/>
 
-            <div onClick={()=> {setSideState(true); console.log(showSide);}} 
+            <div onClick={()=> {setSideState(true);}} 
               className={`js-nav-btn lg:hidden cursor-pointer ${showSide && 'hidden'} ${!isActive ? 'text-white':''}`}>
               <FontAwesomeIcon icon={faBars} size='xl'/>
             </div>
