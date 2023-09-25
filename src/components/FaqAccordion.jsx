@@ -57,7 +57,7 @@ const FaqAccordion = ({className}) => {
                 </div>
             </div>
             <p className="text-color-iron h-0 overflow-hidden duration-300 js-faq-text">
-                WhatsApp in it's normal use, only allows you to target a small number of audience. To be able to overcome this limitation
+                WhatsApp in it&apos;s normal use, only allows you to target a small number of audience. To be able to overcome this limitation
                 you need to use the MEMA app which gives you the possibility to create marketting campaigns and target a large number of audience of up to
                 1 millions.
             </p>
@@ -71,7 +71,7 @@ const FaqAccordion = ({className}) => {
                 </div>
             </div>
             <p className="text-color-iron h-0 overflow-hidden duration-300 js-faq-text">
-                As of now MEMA doesn't support any online payment method. But we will remediate in the nearest future, for users of Cameroon, you can contact us throught
+                As of now MEMA doesn&apos;t support any online payment method. But we will remediate in the nearest future, for users of Cameroon, you can contact us throught
                 our WhatsApp for the payment procedure
             </p>
         </article>
@@ -85,7 +85,7 @@ const FaqAccordion = ({className}) => {
             </div>
             <p className="text-color-iron h-0 overflow-hidden duration-300 js-faq-text">
                 After creating a MEMA account, you have the option to start with a free 30 message-package which will be deposited to your account.
-                For contacts you'll need to buy a certain quantity that you'll need. You can also manually add contacts that you have.
+                For contacts you&apos;ll need to buy a certain quantity that you&apos;ll need. You can also manually add contacts that you have.
             </p>
         </article>
 
@@ -98,7 +98,7 @@ const FaqAccordion = ({className}) => {
             </div>
             <p className="text-color-iron h-0 overflow-hidden duration-300 js-faq-text">
                 There are many variations of passages of Lorem Ipsum available but the majority suffered is alteration 
-                in that words which don't look even slightly believable. If you are Lorem Ipsum you need to be sure there isn't anything ready too much embarrassing.
+                in that words which don&apos;t look even slightly believable. If you are Lorem Ipsum you need to be sure there isn&apos;t anything ready too much embarrassing.
             </p>
         </article>
 

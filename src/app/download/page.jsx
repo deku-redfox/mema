@@ -82,7 +82,7 @@ export default function Download() {
 
             <div className="flex-[0.8]">
               <figure className="relative aspect-video">
-                <Image src='/screenshot3.jpg' fill/>
+                <Image src='/screenshot3.jpg' fill alt='download page img4'/>
               </figure>
             </div>
 

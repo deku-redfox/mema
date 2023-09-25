@@ -34,7 +34,7 @@ export default function Home() {
             </div>
 
             <figure className="flex-1 relative aspect-video rounded-xl overflow-hidden">
-              <Image src='/about-img-3.jpeg' fill/>
+              <Image src='/about-img-3.jpeg' fill alt='about-img'/>
             </figure>
 
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
 
             <figure className="flex-[0.8] relative rounded-lg overflow-hidden aspect-[13/16] max-md:w-4/5">
-              <Image src='/feature-img3.jpeg' fill/>
+              <Image src='/feature-img3.jpeg' fill alt='about-img2'/>
             </figure>
 
           </div>

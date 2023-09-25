@@ -39,13 +39,13 @@ const Slide = () => {
     <div className="relative flex-1 w-full md:w-auto overflow-hidden">
         <div className={`relative flex items-center aspect-video duration-500 ${value}`}>
             <div className="relative w-full h-full">
-            <Image src='/screenshot1.jpg' fill/>
+            <Image src='/screenshot1.jpg' fill alt='app image 1'/>
             </div>
             <div className="absolute w-full h-full left-full">
-            <Image src='/screenshot2.jpg' fill/>
+            <Image src='/screenshot2.jpg'  alt='app image 2'/>
             </div>
             <div className="absolute w-full h-full left-[200%]">
-            <Image src='/screenshot3.jpg' fill/>
+            <Image src='/screenshot3.jpg' fill alt='app image 3'/>
             </div>
             
         </div>

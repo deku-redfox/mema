@@ -35,7 +35,7 @@ export default function BlogDetails({params}) {
       console.error('error while getting post', error);
     }
 
-  }, [])
+  }, [params.id])
 
   return (
     <main>
@@ -52,7 +52,7 @@ export default function BlogDetails({params}) {
 
               <div className="flex flex-col">
                 <figure className="relative aspect-[16/9] rounded-lg overflow-hidden bg-skeleton">
-                  {post.postImage && <Image src={post.postImage} fill className='animate-fadeIn'/>}
+                  {post.postImage && <Image src={post.postImage} fill className='animate-fadeIn' alt='Post Thumbnail'/>}
                 </figure>
 
                 <div className="flex-1 flex flex-col items-start">
@@ -62,7 +62,7 @@ export default function BlogDetails({params}) {
                       author.username 
                         ? (
                           <div className="flex gap-2 items-center animate-fadeIn">
-                            <Image src='/admin.png' height={30} width={30}/>
+                            <Image src={author.profile} height={30} width={30} alt={`${author.username} profile image`}/>
                             <span className='text-color-iron'>{author.username}</span>
                           </div>
                         )
@@ -176,7 +176,7 @@ export default function BlogDetails({params}) {
 
                   <div className="flex flex-col rounded-lg overflow-hidden">
                     <Link href='#' className="relative aspect-[16/10]">
-                      <Image src='/blog4.jpg' fill/>
+                      <Image src='/blog4.jpg' fill alt='related post thumb1'/>
                     </Link>
 
                     <div className="flex-1 flex flex-col p-6 items-start bg-color-blue-grey-soft">
@@ -199,7 +199,7 @@ export default function BlogDetails({params}) {
 
                   <div className="flex flex-col rounded-lg overflow-hidden">
                     <Link href='#' className="relative aspect-[16/10]">
-                      <Image src='/blog2.jpg' fill/>
+                      <Image src='/blog2.jpg' fill alt='related post thumb2'/>
                     </Link>
 
                     <div className="flex-1 flex flex-col p-6 items-start bg-color-blue-grey-soft">

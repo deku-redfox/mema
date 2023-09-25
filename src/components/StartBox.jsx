@@ -12,7 +12,7 @@ const StartBox = ({expand = false}) => {
 
         <div className="absolute -top-[200px] -right-[210px] bg-color-orange rounded-full h-[300px] w-[300px] hidden xl:block"></div>
 
-        <h5 className="text-color-orange">Let's Try! Get Free Support</h5>
+        <h5 className="text-color-orange">Let&apos;s Try! Get Free Support</h5>
 
         <h2 className="text-white">Start Your 14-Day Free Trial</h2>
 

@@ -21,7 +21,7 @@ export default function Home() {
                 Empowers Businesses To Reach Their Target Audience
               </h1>
               <p className="text-color-grey leading-normal text-lg mt-4">
-                Wether you're promoting a new product, running a limited time offer, or simply 
+                Wether you&apos;re promoting a new product, running a limited time offer, or simply 
                 nurturing customer relationships, MEMA ensures that your
                 messages are delivered promptly and effectively.
               </p>
@@ -295,7 +295,7 @@ export default function Home() {
 
             <div className="absolute -top-[200px] -right-[210px] bg-color-orange rounded-full h-[300px] w-[300px] hidden xl:block"></div>
 
-            <h5 className="text-color-orange">Let's Try! Get Free Support</h5>
+            <h5 className="text-color-orange">Let&apos;s Try! Get Free Support</h5>
 
             <h2 className="text-white">Start Your 14-Day Free Trial</h2>
 

@@ -23,7 +23,7 @@ export default function Home() {
     if (Parse.User.current() !== null) {
       router.push('/')
     }
-  }, [router, Parse.User])
+  }, [router])
 
   const onSubmit = (e)=> {
     e.preventDefault()

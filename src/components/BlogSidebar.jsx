@@ -42,7 +42,7 @@ const BlogSidebar = () => {
             </figure>
             <div className="flex flex-col gap-2 text-color-iron text-sm">
                 <p className="group-hover:text-color-primary font-bold line-clamp-2 tracking-wider leading-relaxed duration-500">
-                <Link href='#' className='block'>The modern product manager's tech stack</Link>
+                <Link href='#' className='block'>The modern product manager&apos;s tech stack</Link>
                 </p>
                 <span>October 20, 2021</span>
             </div>

@@ -71,8 +71,8 @@ export default function Blog() {
 
               {
                 !posts.length > 0 &&
-                Array(5).fill().map(()=> (
-                  <div className="flex flex-col md:flex-row rounded-lgoverflow-hidden">
+                Array(5).fill().map((_, index)=> (
+                  <div key={index} className="flex flex-col md:flex-row rounded-lgoverflow-hidden">
                     <Skeleton width='flex-[0.7]'>
                       <div className="w-full aspect-[16/12]"></div>
                     </Skeleton>
@@ -112,7 +112,7 @@ export default function Blog() {
                   return (
                     <div className="flex flex-col md:flex-row rounded-lg shadeWide overflow-hidden" key={post.id}>
                       <Link href={`/blog/${post.id}`} className="flex-[0.7] relative aspect-[16/12]">
-                        <Image src={postInfos.postImage} fill className='object-cover'/>
+                        <Image src={postInfos.postImage} fill className='object-cover' alt={`thumbnail of ${postInfos.title}`}/>
                       </Link>
     
                       <div className="flex-1 flex flex-col p-6 items-start">
@@ -123,7 +123,7 @@ export default function Blog() {
     
                         <div className="flex gap-6 items-center py-3 text-sm">
                           <div className="flex gap-2 items-center">
-                            <Image src='/admin.png' height={20} width={20}/>
+                            <Image src={user.profile} height={20} width={20} alt={`${user.username} profile image`}/>
                             <span className='text-color-iron'>{user.username}</span>
                           </div>
                           <div className="flex gap-2 items-center">

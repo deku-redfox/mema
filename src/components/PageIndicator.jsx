@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 const PageIndicator = ({page, links = [], title}) => {
 
-	const linksDisplay = links.map(link => {
+	const linksDisplay = links.map((link, index) => {
 		return (
-			<span>
+			<span key={index}>
 				<Link href={link.url}>{link.name}</Link>
 				<span className='font-bold text-xl mx-2'>.</span>
 			</span>
@@ -21,14 +21,14 @@ const PageIndicator = ({page, links = [], title}) => {
 
 					<div className="headTitle space-y-4">
 						<h1>{title ?? page}</h1>
-						<p>
-							<span>
+						<div>
+							<>
 								<Link href='/'>Home</Link>
 								<span className='font-bold text-xl mx-2'>.</span>
-							</span>
-							{...linksDisplay}
+							</>
+							{linksDisplay}
 							<span className='text-color-grey ml-2'> {page}</span>
-						</p>
+						</div>
 					</div>
 					
 				</div>
