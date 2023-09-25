@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins&display=swap');
+
+:root {
+    --primaryColor: #175cff;
+    --primaryColorDark: #1e38a3;
+    --primaryColorDarker: #021048;
+    --greyColorDark: rgb(54, 54, 54);
+    --blueGrey: #0b163f;
+}
+
+@layer base {
+
+  /** *** RESET SYLES *** **/
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    @apply text-5xl max-md:text-4xl leading-tight font-bold;
+  }
+
+  h2 {
+    @apply text-[40px] max-md:text-[34px] font-bold leading-tight
+  }
+
+  h3 {
+    @apply text-[24px] max-md:text-[22px] font-bold leading-tight
+  }
+
+  h4{
+    @apply text-[22px] font-bold
+  }
+
+  h5 {
+    @apply text-xl font-bold
+  }
+
+  h6 {
+    @apply font-bold
+  }
+
+  /* REUSABLE STYLES */
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+
+  .darkOverlay {
+    @apply fixed bg-black/70 inset-0 z-50 duration-500
+  }
+
+  .cover {
+    background-image: linear-gradient(90deg, var(--primaryColorDarker), var(--primaryColorDark));
+  }
+
+  .shadeWide {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadeWider {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .shadeVast {
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.4);
+  }
+
+  .headTitle {
+    @apply text-center w-full lg:max-w-[800px]
+  }
+
+  .ship {
+    @apply block px-4 py-[6px] rounded-md bg-color-blue-grey-soft text-sm text-color-blue-grey hover:bg-color-primary hover:text-white duration-500
+  }
+
+  .pageLink {
+    @apply h-10 w-10 rounded-md border border-color-blue-grey-soft cursor-pointer
+      text-color-iron flex justify-center items-center duration-500 hover:bg-color-primary hover:text-white
+  }
+
+  .pageLink.active {
+    @apply bg-color-primary text-white
+  }
+
+  .checkCircle {
+    @apply rounded-full bg-blue-100 px-1 py-[2px] mr-2 text-color-primary text-xs inline-block;
+  }
+
+  .dot {
+    @apply h-2 w-2 rounded-full bg-color-primary;
+  }
+
+  /* BLOG DETAILS STYLES */
+  blockquote {
+    @apply bg-color-blue-grey-soft my-10 rounded-md border-l-4 border-color-primary px-8 py-10
+  }
+
+  cite {
+    @apply relative font-bold not-italic flex items-center text-color-dark-blue pl-6 before:content-[''] before:absolute before:left-0 
+    before:h-[2px] before:w-4 before:bg-color-dark-blue mt-6;
+  }
+
+}

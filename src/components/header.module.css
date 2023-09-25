@@ -1,0 +1,25 @@
+.navlink {
+    @apply hover:text-white text-color-grey max-xl:text-[15px]
+}
+
+.header {
+    @apply absolute ease-in-out duration-500 z-40 py-2
+}
+
+.header.active {
+    @apply bg-white py-0 fixed;
+    animation: slideIn 1s ease forwards;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.15);
+}
+
+@keyframes slideIn {
+    
+    0% {transform: translateY(-100%);}
+
+    100% {transform: translateY(0);}
+
+}
+
+.header.active .navlink {
+    @apply text-color-primary-darker hover:text-color-primary
+}
